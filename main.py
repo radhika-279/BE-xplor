@@ -14,7 +14,6 @@ terms_and_conditions = {
     "termination": "Xplor reserves the right to terminate access for violations.",
     "governing_law": "Terms governed by Indian law."
 }
-
 privacy_policy = {
     "title": "Xplor Ticketing Machine - Privacy Policy",
     "information_collection": "We collect ticket sales data and device usage stats.",
@@ -26,7 +25,6 @@ privacy_policy = {
     "children_privacy": "Service not intended for children under 13.",
     "changes": "We reserve the right to update or modify the privacy policy."
 }
-
 cancellation_and_refund_policy = {
     "title": "Xplor Ticketing Machine - Cancellation and Refund Policy",
     "cancellation": "Subscriptions can be canceled anytime by contacting customer support.",
@@ -37,7 +35,6 @@ cancellation_and_refund_policy = {
     "refund_method": "Refunds issued using the original payment method whenever possible.",
     "exceptions": "Exceptions to policy may be considered under certain circumstances at our discretion."
 }
-
 
 @app.get('/terms_and_conditions')
 async def get_terms_and_conditions():
@@ -50,7 +47,6 @@ async def get_privacy_policy():
 @app.get('/cancellation_and_refund_policy')
 async def get_cancellation_and_refund_policy():
     return JSONResponse(content=cancellation_and_refund_policy)
-
 
 @app.get('/help')
 async def get_help_section():
